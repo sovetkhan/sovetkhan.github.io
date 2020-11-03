@@ -3,4 +3,4 @@
 # Советханов Адлет Ерболович
 Мой ПОРТФОЛИО
 
-[beauty](https://sovetkhan.github.io/beauty/ "Практический сайт")
+[beauty](https://sovetkhan.github.io/beauty/ "Практический сайт") - Практический сайт
