@@ -1,0 +1,110 @@
+.header
+	&__menu
+		padding: 16px 0
+		&-list
+			display: flex
+			justify-content: center
+			align-items: center
+			list-style: none
+			margin: 0
+			a
+				text-decoration: none
+				padding: 0 15px
+				color: $text-color
+	&__descriptions
+		background-color: #fff
+		padding-top: 20px
+		padding-bottom: 30px
+		&-block
+			display: flex
+			justify-content: space-between
+			align-items: center
+			padding-bottom: 20px
+		&-logo
+			margin: 0
+			display: flex
+			align-items: center
+		&-title
+			padding-left: 20px
+			text-transform: uppercase
+			font-size: 36px
+			letter-spacing: 5px
+			color: $live-color
+			font-weight: 900
+		&-search
+			flex-basis: 45%
+			text-align: center
+			position: relative
+			input
+				max-width: 250px
+				height: 40px
+				padding: 10px 20px 10px 40px
+				border-radius: 40px
+				border: none
+				background-color: $body-bgc
+				font-weight: 300
+			&::before
+				content: ''
+				display: block
+				position: absolute
+				left: 167px
+				top: 10.5px
+				width: 20px
+				height: 20px
+				background: url('../images/search.svg') center no-repeat
+		&-contact
+			&_phone
+				font-size: 16px
+				text-decoration: none
+				color: $text-color
+				font-weight: 500
+			.icon-phone
+				display: none
+	&__nav
+		border-top: 1px solid $body-bgc
+		&-list
+			display: flex
+			justify-content: center
+			margin: 0
+			padding-top: 30px
+			list-style: none
+			li 
+				a
+					padding: 0 20px
+					text-decoration: none
+					color: $text-color
+					font-weight: 500
+@media (max-width: 1199px)
+	.header
+		&__descriptions
+			&-search
+				flex-basis: 33%
+				&::before
+					left: 62.5px
+			&-contact
+				.icon-phone
+					display: none
+@media (max-width: 991px)
+	.header
+		&__descriptions
+			&-search
+				&::before	
+					left: 45px
+			&-contact
+				&_phone
+					display: none
+				.icon-phone
+					display: block
+					padding: 5px
+					border-radius: 50%
+					font-size: 22px
+					background-color: $live-color
+					color: #fff
+					&:hover 
+						background-color: lighten($live-color, 5%)
+@media (max-width: 768px)
+	.header
+		&__descriptions
+			&-search
+				&::before	
+					left: 28px

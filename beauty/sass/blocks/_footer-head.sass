@@ -1,0 +1,39 @@
+.footer__head
+	padding: 35px 0
+	background-color: #fff
+	&-contact
+		display: block
+	&-block
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&-social
+		flex-basis: 25%
+		display: flex
+		justify-content: space-between
+		align-items: center
+		.social-links
+			display: block
+			padding: 12px
+			font-size: 22px
+			color: $live-color
+			border: 2px solid $live-color
+			border-radius: 50%
+			transition: all 0.2s
+			&:hover 
+				background-color: $live-color
+				color: #fff
+@media (max-width: 768px)
+	.footer__head
+		&-block
+			text-align: center
+			flex-wrap: wrap
+			justify-content: center
+			height: 170px
+		&-social
+			flex-basis: 100%
+		&-address
+			flex-basis: 50%
+		.footer__head-contact
+			flex-basis: 50%
+

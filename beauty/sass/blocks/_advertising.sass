@@ -1,0 +1,41 @@
+.advertising
+	margin-bottom: 100px
+	&__block
+		display: flex
+		justify-content: space-between
+		align-items: center
+		color: #fff
+		&-card
+			padding: 35px 40px
+			width: 540px
+			height: 225px
+			background-color: $live-color
+			&:hover
+				background-color: lighten($live-color, 5%)
+		&-title
+			margin-top: 0
+			font-size: 18px
+			font-weight: 500
+		&-subtitle
+			display: block
+			padding-bottom: 25px
+			line-height: 1.5
+		&-form
+			input
+				padding: 12px 25px
+				border: none
+				border-radius: 30px
+	&-img
+		&__one
+			background: $live-color url('../images/message.png') center right 45px no-repeat
+		&__two
+			background: $live-color url('../images/car.png') center right 45px no-repeat
+@media (max-width: 1199px) 
+	.advertising
+		&__block
+			flex-wrap: wrap
+			justify-content: center
+			&-card
+				margin-bottom: 20px
+				&:last-child
+					margin-bottom: 0
